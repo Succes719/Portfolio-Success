@@ -1,37 +1,64 @@
-header nav {
-    background-color: rgba(34, 57, 57, 0.826);
-    justify-content: space-between;
+body {
+    background-color: rgb(231, 236, 240);
+    color: rgb(34, 57, 57);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: rgb(34, 57, 57);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.introduction{
     display: flex;
-    padding: 2px;
-}
-
-header nav a {
-    color: rgb(231, 236, 240);
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-header nav ul {
-    display:flex;
-    list-style: none;
-}
-
-
-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50px;
-    display: flex;
-    margin-bottom: 70px;
-}
-
-.introduction  {
-    text-decoration: none;
     align-items: center;
-    justify-content:;
+    justify-content: center;
+    width: 100%;
+    max-width: 800ox;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 18px;
+
+}
+
+.image {
+    flex-shrink: 0;
+}
+
+.image img {
+    max-width: 450px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
 }
